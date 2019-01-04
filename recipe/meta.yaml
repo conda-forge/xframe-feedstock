@@ -1,6 +1,6 @@
 {% set name = "xframe" %}
-{% set version = "0.0.2" %}
-{% set sha256 = "29aec66264480e6b378155223a80642f58cecb2a964281a222de46f4cd97e670" %}
+{% set version = "0.1.0" %}
+{% set sha256 = "0e5c2a39088f246424490bf0bd46d39fbabf8cd608fc9e8741cb1ef8307c8696" %}
 
 package:
   name: {{ name|lower }}
