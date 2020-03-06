@@ -1,6 +1,6 @@
 {% set name = "xframe" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "0149f8dd5f38a6783544abca8abaadba45bab321fdcc0db0dd8b11148e1d741f" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "1e8755b7a8b54dd8b7c7b65d99cc896e587ebf563c937f4aae1f73ad4f4c6be1" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [win and vc<14]
 
 requirements:
@@ -20,9 +20,9 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
   host:
-    - xtensor >=0.20,<0.21
+    - xtensor >=0.21,<0.22
   run:
-    - xtensor >=0.20,<0.21
+    - xtensor >=0.21,<0.22
 
 test:
   commands:
